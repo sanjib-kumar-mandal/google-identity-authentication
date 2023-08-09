@@ -1,0 +1,25 @@
+{
+  "name": "google-identity-authentication",
+  "version": "1.0.0",
+  "description": "Google Authentication for One tap and SSO.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "email": "sanjib0248@gmail.com",
+    "name": "Sanjib Kumar Mandal",
+    "url": "https://github.com/sanjib-kumar-mandal"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sanjib-kumar-mandal/google-identity-authentication.git"
+  }
+}
