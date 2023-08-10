@@ -191,18 +191,18 @@ export class GoogleWebSignIn {
                     if (this.google) {
                         if (options.buttonContainer) {
                             this.google.accounts.id.renderButton(options.buttonContainer, styles);
-                            Promise.resolve();
+                            return Promise.resolve();
                         } else {
-                            Promise.reject(new Error("[button] is not defined."));
+                            return Promise.reject(new Error("[button] is not defined."));
                         }
                     } else {
-                        Promise.reject(new Error("[google] is not defined."));
+                        return Promise.reject(new Error("[google] is not defined."));
                     }
                 } else {
-                    Promise.reject(new Error("[style]: Please mention the style properties."));
+                    return Promise.reject(new Error("[style]: Please mention the style properties."));
                 }
             } else {
-                Promise.reject(new Error("[window] is not defined."));
+                return Promise.reject(new Error("[window] is not defined."));
             }
         } catch (e) {
             return Promise.reject(e);

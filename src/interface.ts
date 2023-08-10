@@ -1,9 +1,3 @@
-export interface InvokeTapdata {
-    clientId: string;
-    cancelTapOnClickingOutside: boolean;
-    notificationCallback: (data: any) => void;
-}
-
 export interface ConfigOptions {
     clientId: string;
     autoSelect?: boolean;
@@ -20,6 +14,14 @@ export interface ConfigOptions {
     nativeCallback?: (response: any) => void;
     intermediateIframeCloseCallback?: (response: any) => void;
 }
+
+export interface InvokeTapdata {
+    clientId: string;
+    cancelTapOnClickingOutside: boolean;
+    notificationCallback: (data: any) => void;
+}
+
+
 
 export interface GoogleButtonViewOptions {
     clickListener?: (response: any) => void;
