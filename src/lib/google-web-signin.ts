@@ -1,6 +1,6 @@
 import { ConfigOptions, GoogleButtonViewOptions } from "./interface";
 
-export class GoogleWebSignIn {
+export class GoogleAuthCompanion {
 
     private readonly scriptUrl = 'https://accounts.google.com/gsi/client';
     private isScriptLoaded = false;
@@ -73,7 +73,7 @@ export class GoogleWebSignIn {
      * @param data - InvokeTapdata
      * @returns - Promise<unknown>
      */
-    invokeOneTap(notificationCallback: (data: any) => void): Promise<unknown> {
+    invokeOneTap(notificationCallback?: (data: any) => void): Promise<unknown> {
         try {
             if (this.isScriptLoaded) {
                 if (this.google) {
@@ -154,7 +154,7 @@ export class GoogleWebSignIn {
     revoke(loginHint: string, callback?: () => void): Promise<unknown> {
         try {
             if (this.google) {
-                callback && this.google.accounts.id.revoke(loginHint, callback);
+                loginHint && this.google.accounts.id.revoke(loginHint, callback);
                 return Promise.resolve();
             } else {
                 return Promise.reject(new Error("[google]: Couldn't find google."));
@@ -170,7 +170,7 @@ export class GoogleWebSignIn {
      * @param options - GoogleButtonViewOptions
      * @returns - Promise<unknown>
      */
-    async renderGoogleButton(options: GoogleButtonViewOptions):Promise<unknown> {
+    renderGoogleButton(options: GoogleButtonViewOptions):Promise<unknown> {
         try {
             if (window !== undefined) {
                 if (options.style) {

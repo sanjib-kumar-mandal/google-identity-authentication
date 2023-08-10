@@ -1,5 +1,5 @@
 {
-  "name": "google-identity-authentication",
+  "name": "google-auth-companinon",
   "version": "1.0.0",
   "description": "Google authentication for One tap and SSO Button.",
   "main": "./dist/index.js",
