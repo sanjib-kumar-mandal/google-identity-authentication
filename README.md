@@ -1,4 +1,4 @@
-# Google Auth Companinon
+# Google Auth Companion
 
 This plugin concentrated on usage of [google identity authentication](https://developers.google.com/identity/gsi/web/guides/overview).
 Each methods are created to reduce code size of the developer end.
@@ -16,12 +16,12 @@ Each methods are created to reduce code size of the developer end.
 
 ## Install
 
-`npm install google-auth-companinon`
+`npm install google-auth-companion`
 
 ## Usage
 
 ```
-    import { GoogleAuthCompanion } from 'google-auth-companinon';
+    import { GoogleAuthCompanion } from 'google-auth-companion';
 
     const googleAuth = new GoogleAuthCompanion();
 
