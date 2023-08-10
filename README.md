@@ -24,9 +24,10 @@ Each methods are created to reduce code size of the developer end.
     import { GoogleAuthCompanion } from 'google-auth-companinon';
 
     const googleAuth = new GoogleAuthCompanion();
+
     googleAuth.initialize({
         clientId: 'YOUR_CLIENT_ID',
-        callback: 'YOUR_RESPONSE_HANDLER_METHOD',
+        callback: this['YOUR_RESPONSE_HANDLER_METHOD'],
         ...
     });
 
