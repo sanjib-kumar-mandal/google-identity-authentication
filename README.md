@@ -27,7 +27,7 @@ Each methods are created to reduce code size of the developer end.
 
     googleAuth.initialize({
         clientId: 'YOUR_CLIENT_ID',
-        callback: this['YOUR_RESPONSE_HANDLER_METHOD'],
+        callback: this['YOUR_RESPONSE_HANDLER_METHOD_NAME'],
         ...
     });
 
@@ -42,17 +42,16 @@ Each methods are created to reduce code size of the developer end.
     googleAuth.revoke(loginHint);
 
     googleAuth.renderGoogleButton({
-        clickListener: this['YOUR_METHOD_NAME'];
-        buttonContainer: document.getElementById('personalizedButton');
+        clickListener: this['YOUR_METHOD_NAME'],
+        buttonContainer: document.getElementById('personalizedButton'),
         style: {
-            type: 'standard';
-            theme: 'outline';
-            size: 'large';
-            text: 'signin_with';
-            shape: 'rectangular';
-            logoAlignment: 'left';
-            width: 400;
-            locale: 'en';
+            type: 'standard',
+            theme: 'outline',
+            size: 'large',
+            text: 'signin_with',
+            shape: 'rectangular',
+            logoAlignment: 'left',
+            width: 400
         }
     });
 
