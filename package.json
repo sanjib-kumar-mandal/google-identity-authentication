@@ -4,7 +4,7 @@
   "description": "Google authentication for One tap and SSO Button.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "tsc"
   },
@@ -12,7 +12,6 @@
     "SSO for web",
     "Typescript google authentication",
     "Google one tap",
-    "Google dynamic button",
     "auth",
     "authentication",
     "identity",

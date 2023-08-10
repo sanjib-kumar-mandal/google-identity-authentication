@@ -9,19 +9,11 @@ export interface ConfigOptions {
     stateCookieDomain?: string;
     uxMode?: 'redirect' | 'popup';
     allowedParentOrigin?: string;
-    itpSupport: boolean;
+    itpSupport?: boolean;
     callback?: (response: any) => void;
     nativeCallback?: (response: any) => void;
     intermediateIframeCloseCallback?: (response: any) => void;
 }
-
-export interface InvokeTapdata {
-    clientId: string;
-    cancelTapOnClickingOutside: boolean;
-    notificationCallback: (data: any) => void;
-}
-
-
 
 export interface GoogleButtonViewOptions {
     clickListener?: (response: any) => void;
