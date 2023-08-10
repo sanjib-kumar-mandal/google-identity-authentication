@@ -1,20 +1,25 @@
 {
   "name": "google-identity-authentication",
   "version": "1.0.0",
-  "description": "Google Authentication for One tap and SSO.",
+  "description": "Google authentication for One tap and SSO Button.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "SSO for web",
+    "Typescript google authentication",
+    "Google one tap",
+    "Google dynamic button"
+  ],
   "author": {
     "email": "sanjib0248@gmail.com",
     "name": "Sanjib Kumar Mandal",
     "url": "https://github.com/sanjib-kumar-mandal"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "typescript": "^5.1.6"
   },
