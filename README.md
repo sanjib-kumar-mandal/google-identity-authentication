@@ -1,4 +1,4 @@
-### Google Auth Companinon
+# Google Auth Companinon
 
 This plugin concentrated on usage of [google identity authentication](https://developers.google.com/identity/gsi/web/guides/overview).
 Each methods are created to reduce code size of the developer end.
