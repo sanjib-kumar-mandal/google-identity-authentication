@@ -12,7 +12,11 @@
     "SSO for web",
     "Typescript google authentication",
     "Google one tap",
-    "Google dynamic button"
+    "Google dynamic button",
+    "auth",
+    "authentication",
+    "identity",
+    "google identity"
   ],
   "author": {
     "email": "sanjib0248@gmail.com",
