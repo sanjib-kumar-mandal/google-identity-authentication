@@ -132,10 +132,10 @@ export class GoogleAuthCompanion {
      * @param callback - callback method
      * @returns - Promise<unknown>
      */
-    storeCredential(credential: any, callback: () => void): Promise<unknown> {
+    storeCredential(credential: any, callback?: () => void): Promise<unknown> {
         try {
             if (this.google) {
-                callback && this.google.accounts.id.storeCredential(credential, callback);
+                credential && this.google.accounts.id.storeCredential(credential, callback);
                 return Promise.resolve();
             } else {
                 return Promise.reject(new Error("[google]: Couldn't find google."));
